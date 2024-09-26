@@ -1,43 +1,43 @@
-## Herança em Programação Orientada a Objetos
+## Heranï¿½a em Programaï¿½ï¿½o Orientada a Objetos
 
 ### Conceito e Mecanismos
-* **Definição:** A herança é um mecanismo que permite que uma classe (classe filha) herde atributos e métodos de outra classe (classe pai). 
-* **Herança Simples:** Uma classe herda de apenas uma classe pai.
-* **Herança Múltipla:** Uma classe herda de múltiplas classes pais (geralmente implementada através de interfaces em linguagens como Java).
-* **Operador `extends`:** Utilizado para indicar a relação de herança entre classes.
-* **Acesso a Membros:** Explicar como acessar métodos e propriedades da classe pai na classe filha.
-* **Método `parent::`:** Demonstrar o uso para acessar métodos sobrepostos na classe pai.
+* **Definiï¿½ï¿½o:** A heranï¿½a ï¿½ um mecanismo que permite que uma classe (classe filha) herde atributos e mï¿½todos de outra classe (classe pai). 
+* **Heranï¿½a Simples:** Uma classe herda de apenas uma classe pai.
+* **Heranï¿½a Mï¿½ltipla:** Uma classe herda de mï¿½ltiplas classes pais (geralmente implementada atravï¿½s de interfaces em linguagens como Java).
+* **Operador `extends`:** Utilizado para indicar a relaï¿½ï¿½o de heranï¿½a entre classes.
+* **Acesso a Membros:** Explicar como acessar mï¿½todos e propriedades da classe pai na classe filha.
+* **Mï¿½todo `parent::`:** Demonstrar o uso para acessar mï¿½todos sobrepostos na classe pai.
 
-### Prática
-* **Exemplo:** Criar uma classe base `Animal` com atributos como `nome` e `idade`, e métodos como `comer` e `dormir`.
-* **Exemplo:** Criar uma classe filha `Cachorro` que herda de `Animal` e adiciona métodos específicos como `latir`.
+### Prï¿½tica
+* **Exemplo:** Criar uma classe base `Animal` com atributos como `nome` e `idade`, e mï¿½todos como `comer` e `dormir`.
+* **Exemplo:** Criar uma classe filha `Cachorro` que herda de `Animal` e adiciona mï¿½todos especï¿½ficos como `latir`.
 
 ## Encapsulamento
-### Conceito e Benefícios
-* **Definição:** O encapsulamento é o mecanismo de ocultar os detalhes internos de um objeto, expondo apenas as interfaces necessárias para interagir com ele.
-* **Benefícios:** Proteção de dados, reutilização de código, facilidade de manutenção.
+### Conceito e Benefï¿½cios
+* **Definiï¿½ï¿½o:** O encapsulamento ï¿½ o mecanismo de ocultar os detalhes internos de um objeto, expondo apenas as interfaces necessï¿½rias para interagir com ele.
+* **Benefï¿½cios:** Proteï¿½ï¿½o de dados, reutilizaï¿½ï¿½o de cï¿½digo, facilidade de manutenï¿½ï¿½o.
 
 ### Modificadores de Acesso
-* **`public`:** Acessível de qualquer lugar.
-* **`private`:** Acessível apenas dentro da classe.
-* **`protected`:** Acessível dentro da classe e em classes filhas.
+* **`public`:** Acessï¿½vel de qualquer lugar.
+* **`private`:** Acessï¿½vel apenas dentro da classe.
+* **`protected`:** Acessï¿½vel dentro da classe e em classes filhas.
 
-### Prática
-* **Exemplo:** Criar uma classe `ContaBancaria` com atributos `saldo` (private) e métodos `depositar` e `sacar` (public).
-* **Exemplo:** Demonstrar como acessar os atributos e métodos de dentro e fora da classe.
+### Prï¿½tica
+* **Exemplo:** Criar uma classe `ContaBancaria` com atributos `saldo` (private) e mï¿½todos `depositar` e `sacar` (public).
+* **Exemplo:** Demonstrar como acessar os atributos e mï¿½todos de dentro e fora da classe.
 
-## Exercícios Propostos
-* Implementar uma hierarquia de classes para representar figuras geométricas (classe base `FiguraGeometrica` e classes filhas `Circulo`, `Quadrado`, etc.).
+## Exercï¿½cios Propostos
+* Implementar uma hierarquia de classes para representar figuras geomï¿½tricas (classe base `FiguraGeometrica` e classes filhas `Circulo`, `Quadrado`, etc.).
 * Criar uma classe `Pessoa` e classes filhas `Aluno` e `Professor`, demonstrando a polimorfismo.
-* Implementar uma classe `Carro` com atributos encapsulados e métodos para simular o funcionamento de um carro.
+* Implementar uma classe `Carro` com atributos encapsulados e mï¿½todos para simular o funcionamento de um carro.
 
 ## Materiais Complementares
-* **Links:** Adicionar links para tutoriais, artigos e documentações sobre herança e encapsulamento.
+* **Links:** Adicionar links para tutoriais, artigos e documentaï¿½ï¿½es sobre heranï¿½a e encapsulamento.
 
-**Observações:**
+**Observaï¿½ï¿½es:**
 
 * **Imagens e Diagramas:** Utilize ferramentas como Mermaid ou PlantUML para criar diagramas de classes e ilustrar os conceitos.
-* **Código:** Insira blocos de código em Markdown utilizando a sintaxe específica da linguagem (por exemplo, para Python ou Java).
-* **Exercícios:** Proponha exercícios práticos para fixar o aprendizado.
-* **Nível de Detalhe:** Ajuste o nível de detalhe de acordo com o público-alvo.
+* **Cï¿½digo:** Insira blocos de cï¿½digo em Markdown utilizando a sintaxe especï¿½fica da linguagem (por exemplo, para Python ou Java).
+* **Exercï¿½cios:** Proponha exercï¿½cios prï¿½ticos para fixar o aprendizado.
+* **Nï¿½vel de Detalhe:** Ajuste o nï¿½vel de detalhe de acordo com o pï¿½blico-alvo.
 
