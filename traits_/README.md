@@ -51,7 +51,7 @@ Interfaces apenas definem a assinatura de métodos, ou seja, quais métodos uma cl
 
 Quando usar cada um?
 
-    Use Traits: Quando você precisa reutilizar métodos em várias classes sem criar uma hierarquia de herança, e quando diferentes classes precisam de funcionalidades semelhantes, mas não estão relacionadas diretamente.
+    Use Traits: Quando você precisa reutilizar métodos em várias classes sem criar uma hierarquia de herança, e quando diferentes classes precisam de funcionalidades semelhantes, mas não estão relacionadas diretamente.e
 
     Use Classes-mãe: Quando você quer definir um comportamento comum que será compartilhado por classes relacionadas e deseja criar uma hierarquia lógica no seu projeto.
 
@@ -60,9 +60,9 @@ Quando usar cada um?
 
 | Característica        | **Trait**                               | **Classe-mãe/Base**                        | **Classe Abstrata**                       |
 |-----------------------|-----------------------------------------|--------------------------------------------|-------------------------------------------|
-| **Instanciação**       | Não pode ser instanciada                |  <span>&#10003;</span> Pode ser instanciada                       | Não pode ser instanciada                  |
-| **Herança**            | Não cria uma relação de herança         | Cria uma relação de herança (uma classe filha) | Cria uma relação de herança              |
-| **Métodos concretos**  | Contém métodos concretos                | Contém métodos concretos e propriedades    | Contém métodos concretos e abstratos     |
-| **Métodos abstratos**  | Não pode ter métodos abstratos          | Pode ter métodos concretos                 | Pode ter métodos abstratos               |
-| **Herança múltipla**   | Suporta "herança múltipla" (pode usar vários traits) | Não suporta herança múltipla              | Não suporta herança múltipla             |
-| **Propósito**          | Reutilização de código em várias classes | Fornece comportamento comum para subclasses | Fornece uma estrutura a ser seguida por subclasses |
+| **Instanciação**       | &#10060;Não pode ser instanciada                |  &#9989; Pode ser instanciada                       | &#10060;Não pode ser instanciada                  |
+| **Herança**            | &#10060;Não cria uma relação de herança         |&#9989;Cria uma relação de herança (uma classe filha) |&#9989;Cria uma relação de herança              |
+| **Métodos concretos**  | &#9989;Contém métodos concretos                |&#9989;Contém métodos concretos e propriedades    |&#9989;Contém métodos concretos e abstratos     |
+| **Métodos abstratos**  | &#10060;Não pode ter métodos abstratos          |&#9989;Pode ter métodos concretos                 |&#9989;Pode ter métodos abstratos               |
+| **Herança múltipla**   | &#9989;Suporta "herança múltipla" (pode usar vários traits) | &#10060;Não suporta herança múltipla   | &#10060;Não suporta herança múltipla             |
+| **Propósito**          |Reutilização de código em várias classes | Fornece comportamento comum para subclasses | Fornece uma estrutura a ser seguida por subclasses |
