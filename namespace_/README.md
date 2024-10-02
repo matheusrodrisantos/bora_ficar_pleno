@@ -2,25 +2,25 @@
 
 ## Teoria
 
-### O que são namespaces em PHP e por que usá-los?
+### O que sÃ£o namespaces em PHP e por que usÃ¡-los?
 
-Namespaces são uma forma de organizar e agrupar classes, interfaces, funções e constantes em PHP. Eles ajudam a evitar conflitos de nome, especialmente em projetos grandes, onde bibliotecas diferentes podem ter classes com o mesmo nome. Ao usar namespaces, você pode declarar classes com o mesmo nome em diferentes partes de um projeto sem causar colisões.
+Namespaces sÃ£o uma forma de organizar e agrupar classes, interfaces, funÃ§Ãµes e constantes em PHP. Eles ajudam a evitar conflitos de nome, especialmente em projetos grandes, onde bibliotecas diferentes podem ter classes com o mesmo nome. Ao usar namespaces, vocÃª pode declarar classes com o mesmo nome em diferentes partes de um projeto sem causar colisÃµes.
 
 **Vantagens de usar namespaces:**
 - Evita conflitos de nome.
-- Organiza melhor o código em projetos de grande escala.
-- Facilita a reutilização de código de bibliotecas externas.
-- Melhora a legibilidade e a manutenção do código.
+- Organiza melhor o cÃ³digo em projetos de grande escala.
+- Facilita a reutilizaÃ§Ã£o de cÃ³digo de bibliotecas externas.
+- Melhora a legibilidade e a manutenÃ§Ã£o do cÃ³digo.
 
-### Como organizar código usando namespaces em projetos grandes
+### Como organizar cÃ³digo usando namespaces em projetos grandes
 
-1. **Estrutura clara de diretórios**: Em projetos grandes, é comum organizar o código em diferentes diretórios, onde cada diretório corresponde a um namespace.
-2. **Nominação de namespaces**: Geralmente, o nome do namespace reflete a estrutura do diretório do projeto. Por exemplo, se o arquivo `User.php` está no diretório `App/Models`, o namespace seria `App\Models`.
-3. **Separação lógica**: Usar namespaces permite separar a lógica em diferentes módulos, como `Controllers`, `Models`, `Services`, etc.
+1. **Estrutura clara de diretÃ³rios**: Em projetos grandes, Ã© comum organizar o cÃ³digo em diferentes diretÃ³rios, onde cada diretÃ³rio corresponde a um namespace.
+2. **NominaÃ§Ã£o de namespaces**: Geralmente, o nome do namespace reflete a estrutura do diretÃ³rio do projeto. Por exemplo, se o arquivo `User.php` estÃ¡ no diretÃ³rio `App/Models`, o namespace seria `App\Models`.
+3. **SeparaÃ§Ã£o lÃ³gica**: Usar namespaces permite separar a lÃ³gica em diferentes mÃ³dulos, como `Controllers`, `Models`, `Services`, etc.
 
-### Importação de classes com `use` e autoloading com Composer
+### ImportaÃ§Ã£o de classes com `use` e autoloading com Composer
 
-- **Importação de classes**: Quando você deseja usar uma classe que está em outro namespace, você pode importá-la usando a instrução `use`. Isso evita a necessidade de escrever o caminho completo do namespace toda vez que você precisa da classe.
+- **ImportaÃ§Ã£o de classes**: Quando vocÃª deseja usar uma classe que estÃ¡ em outro namespace, vocÃª pode importÃ¡-la usando a instruÃ§Ã£o `use`. Isso evita a necessidade de escrever o caminho completo do namespace toda vez que vocÃª precisa da classe.
   
   ```php
   use App\Models\User;

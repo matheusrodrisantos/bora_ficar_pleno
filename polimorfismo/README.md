@@ -4,15 +4,17 @@
 ## 1. Teoria
 
 ### O que é Polimorfismo em OOP?
-Polimorfismo é um dos pilares da Programação Orientada a Objetos (OOP). Ele permite que objetos de diferentes classes sejam tratados de maneira uniforme quando compartilham a mesma interface ou classe base. Isso facilita o desenvolvimento de sistemas flexíveis e reutilizáveis.
+Polimorfismo é um dos pilares da Programação Orientada a Objetos (OOP). Ele permite que objetos de diferentes classes sejam tratados de maneira uniforme quando compartilham a mesma interface ou classe base. Isso facilita o desenvolvimento de sistemas flexí­veis e reutilizáveis.
 
 
 
 ### Diferentes Tipos de Polimorfismo
-- **Sobrecarga de Métodos (Overloading)**: É a capacidade de definir múltiplos métodos com o mesmo nome, mas com diferentes parâmetros. Isso permite que um método seja adaptado a diferentes tipos 
+- **Sobrecarga de Métodos (Overloading)**: São a capacidade de definir múltiplos métodos com o mesmo nome, mas com diferentes parâmetros. Isso permite que um método seja adaptado a diferentes tipos 
 
 
 - **Sobrescrita de Métodos (Overriding)**: Ocorre quando uma classe filha implementa um método já definido em sua classe base. A sobrescrita permite personalizar o comportamento herdado.
+
+```
 class a{
 
     metodo1(){
@@ -29,7 +31,7 @@ class b extends a {
 
 b = new b();
 b->metodo1(a);
-
+```
 
 ### Implementação de Polimorfismo com Interfaces e Classes Abstratas
 - **Interfaces**: Definem contratos de métodos que as classes que as implementam devem seguir. Isso permite que diferentes classes implementem esses métodos de maneiras variadas.
@@ -43,10 +45,10 @@ b->metodo1(a);
    Defina uma interface com um método comum que será implementado por diferentes classes.
 
 2. **Implementar Diferentes Classes**:
-   Crie classes que implementem essa interface e forneçam sua própria implementação para o método.
+   Crie classes que implementem essa interface e forneÃ§am sua própria implementaÃ§Ã£o para o mÃ©todo.
 
 3. **Método Polimórfico**:
-   Implemente um método que aceite objetos de diferentes classes, desde que sigam a interface definida, permitindo a execução polimórfica.
+   Implemente um mÃ©todo que aceite objetos de diferentes classes, desde que sigam a interface definida, permitindo a execuÃ§Ã£o polimÃ³rfica.
 
 4. **Classe Base e Sobrescrita**:
-   Crie uma classe base com um método, e sobrescreva esse método em uma classe filha para personalizar o comportamento.
+   Crie uma classe base com um mÃ©todo, e sobrescreva esse mÃ©todo em uma classe filha para personalizar o comportamento.
