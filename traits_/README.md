@@ -2,18 +2,18 @@
 
 ## Teoria
 
-### O que são traits e por que usá-las?
+### O que sÃ£o traits e por que usÃ¡-las?
 
-Traits são um mecanismo no PHP que permite reutilizar métodos em várias classes. Eles funcionam como blocos de código que podem ser "importados" para diferentes classes, sem a necessidade de herança. Isso permite o compartilhamento de comportamentos comuns entre classes diferentes sem precisar duplicar código.
+Traits sÃ£o um mecanismo no PHP que permite reutilizar mÃ©todos em vÃ¡rias classes. Eles funcionam como blocos de cÃ³digo que podem ser "importados" para diferentes classes, sem a necessidade de HeranÃ§a. Isso permite o compartilhamento de comportamentos comuns entre classes diferentes sem precisar duplicar cÃ³digo.
 
 **Por que usar traits?**
-- Permitem reutilizar código em diferentes classes.
-- Facilitam o compartilhamento de funcionalidades comuns sem depender de herança.
-- Ajudam a evitar a repetição de código, promovendo a reutilização.
+- Permitem reutilizar cÃ³digo em diferentes classes.
+- Facilitam o compartilhamento de funcionalidades comuns sem depender de HeranÃ§a.
+- Ajudam a evitar a repetiÃ§Ã£o de cÃ³digo, promovendo a reutilizaÃ§Ã£o.
 
-### Como os traits ajudam a resolver problemas de herança múltipla
+### Como os traits ajudam a resolver problemas de HeranÃ§a mÃºltipla
 
-PHP não suporta herança múltipla (onde uma classe pode herdar de várias classes). Isso pode ser um problema quando uma classe precisa de funcionalidades de várias fontes diferentes. Traits resolvem esse problema permitindo que classes "importem" métodos de várias fontes sem herdar de múltiplas classes. Assim, uma classe pode usar métodos de diversos traits ao mesmo tempo.
+PHP NÃ£o suporta HeranÃ§a mÃºltipla (onde uma classe pode herdar de vÃ¡rias classes). Isso pode ser um problema quando uma classe precisa de funcionalidades de vÃ¡rias fontes diferentes. Traits resolvem esse problema permitindo que classes "importem" mÃ©todos de vÃ¡rias fontes sem herdar de mÃºltiplas classes. Assim, uma classe pode usar mÃ©todos de diversos traits ao mesmo tempo.
 
 ```php
 trait Logger {
@@ -34,35 +34,35 @@ class User {
 
 ```
 
-## Diferença entre traits e interfaces
+## DiferenÃ§a entre traits e interfaces
 
 
-Traits fornecem implementação concreta de métodos que podem ser reutilizados em várias classes. Ou seja, eles permitem compartilhar código funcional entre classes.
+Traits fornecem implementaÃ§Ã£o concreta de mÃ©todos que podem ser reutilizados em vÃ¡rias classes. Ou seja, eles permitem compartilhar cÃ³digo funcional entre classes.
 
-Interfaces apenas definem a assinatura de métodos, ou seja, quais métodos uma classe deve implementar, mas não fornecem implementação concreta. As interfaces garantem que uma classe siga um determinado contrato.
+Interfaces apenas definem a assinatura de mÃ©todos, ou seja, quais mÃ©todos uma classe deve implementar, mas NÃ£o fornecem implementaÃ§Ã£o concreta. As interfaces garantem que uma classe siga um determinado contrato.
 
 | Aspecto            | **Traits**                      | **Interfaces**                         |
 |--------------------|----------------------------------|----------------------------------------|
-| **Implementação**   | Oferece métodos concretos        | Apenas assinaturas de métodos          |
-| **Reutilização**    | Compartilha código entre classes | Força a implementação em cada classe   |
-| **Herança Múltipla**| Simula herança múltipla          | Implementação de múltiplas interfaces  |
+| **implementaÃ§Ã£o**   | Oferece mÃ©todos concretos        | Apenas assinaturas de mÃ©todos          |
+| **reutilizaÃ§Ã£o**    | Compartilha cÃ³digo entre classes | ForÃ§a a implementaÃ§Ã£o em cada classe   |
+| **HeranÃ§a mÃºltipla**| Simula HeranÃ§a mÃºltipla          | implementaÃ§Ã£o de mÃºltiplas interfaces  |
 
-## Diferença entre traits, classes bases, classes abastratas 
+## DiferenÃ§a entre traits, classes bases, classes abastratas 
 
 Quando usar cada um?
 
-    Use Traits: Quando você precisa reutilizar métodos em várias classes sem criar uma hierarquia de herança, e quando diferentes classes precisam de funcionalidades semelhantes, mas não estão relacionadas diretamente.e
+    Use Traits: Quando vocÃª precisa reutilizar mÃ©todos em vÃ¡rias classes sem criar uma hierarquia de HeranÃ§a, e quando diferentes classes precisam de funcionalidades semelhantes, mas NÃ£o estÃ£oo relacionadas diretamente.e
 
-    Use Classes-mãe: Quando você quer definir um comportamento comum que será compartilhado por classes relacionadas e deseja criar uma hierarquia lógica no seu projeto.
+    Use Classes-mÃ£e: Quando vocÃª quer definir um comportamento comum que serÃ¡ compartilhado por classes relacionadas e deseja criar uma hierarquia lÃ³gica no seu projeto.
 
-    Use Classes Abstratas: Quando você deseja fornecer uma estrutura para outras classes seguirem, garantindo que certas funcionalidades sejam implementadas nas subclasses.
+    Use Classes Abstratas: Quando vocÃª deseja fornecer uma estrutura para outras classes seguirem, garantindo que certas funcionalidades sejam implementadas nas subclasses.
 
 
-| Característica        | **Trait**                               | **Classe-mãe/Base**                        | **Classe Abstrata**                       |
+| CaracterÃ­stica        | **Trait**                               | **Classe-mÃ£e/Base**                        | **Classe Abstrata**                       |
 |-----------------------|-----------------------------------------|--------------------------------------------|-------------------------------------------|
-| **Instanciação**       | &#10060;Não pode ser instanciada                |  &#9989; Pode ser instanciada                       | &#10060;Não pode ser instanciada                  |
-| **Herança**            | &#10060;Não cria uma relação de herança         |&#9989;Cria uma relação de herança (uma classe filha) |&#9989;Cria uma relação de herança              |
-| **Métodos concretos**  | &#9989;Contém métodos concretos                |&#9989;Contém métodos concretos e propriedades    |&#9989;Contém métodos concretos e abstratos     |
-| **Métodos abstratos**  | &#10060;Não pode ter métodos abstratos          |&#9989;Pode ter métodos concretos                 |&#9989;Pode ter métodos abstratos               |
-| **Herança múltipla**   | &#9989;Suporta "herança múltipla" (pode usar vários traits) | &#10060;Não suporta herança múltipla   | &#10060;Não suporta herança múltipla             |
-| **Propósito**          |Reutilização de código em várias classes | Fornece comportamento comum para subclasses | Fornece uma estrutura a ser seguida por subclasses |
+| **InstanciaÃ§Ã£o**       | &#10060;NÃ£o pode ser instanciada                |  &#9989; Pode ser instanciada                       | &#10060;NÃ£o pode ser instanciada                  |
+| **HeranÃ§a**            | &#10060;NÃ£o cria uma relaÃ§Ã£o de HeranÃ§a         |&#9989;Cria uma relaÃ§Ã£o de HeranÃ§a (uma classe filha) |&#9989;Cria uma relaÃ§Ã£o de HeranÃ§a              |
+| **mÃ©todos concretos**  | &#9989;ContÃ©m mÃ©todos concretos                |&#9989;ContÃ©m mÃ©todos concretos e propriedades    |&#9989;ContÃ©m mÃ©todos concretos e abstratos     |
+| **mÃ©todos abstratos**  | &#10060;NÃ£o pode ter mÃ©todos abstratos          |&#9989;Pode ter mÃ©todos concretos                 |&#9989;Pode ter mÃ©todos abstratos               |
+| **HeranÃ§a mÃºltipla**   | &#9989;Suporta "HeranÃ§a mÃºltipla" (pode usar vÃ¡rios traits) | &#10060;NÃ£o suporta HeranÃ§a mÃºltipla   | &#10060;NÃ£o suporta HeranÃ§a mÃºltipla             |
+| **PropÃ³sito**          |reutilizaÃ§Ã£o de cÃ³digo em vÃ¡rias classes | Fornece comportamento comum para subclasses | Fornece uma estrutura a ser seguida por subclasses |
